@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343A40;
+    height: 10px;
+}
+
+.title {
+    font-family: sans-serif;
+    align-items: center;
+    gap: px;
+    color: white;
+    margin-right: 71%;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.title > p {
+    color: #fff;
+}

@@ -1,0 +1,113 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "content1";
+    background-image: url("bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(7, 59, 7);
+  }
+  
+  .container1{
+    border: 2px solid black;
+    grid-area: content1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: -10px;
+  }
+  
+  
+  .form{
+      background-color: rgba(255, 253, 253, 0.881);
+      width: 30%;
+      height: 65%;
+      margin-top: 5%;
+      margin-left: 35%;
+      border-radius: 7px 7px;
+      text-align: center;
+    }
+  
+    .form >h3 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 35px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      margin-top: 5%;
+      font-weight: 800;
+    }
+  
+
+    .txt_field >label{
+      position: relative;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      margin-top: 5%;
+      margin-left: 15%;
+      left:-8%;
+    }
+  
+
+  
+      .txt_field3 >label{
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        margin-top: 2%;
+      }
+  
+     .txt_field >input{
+        width: 75%;
+        height: 35px;
+        font-size: 20px;
+        border: 1px solid black;
+        background: none;
+        outline: 2px;
+        font-family: "Courier New";
+        margin-bottom: 20px;
+        padding-left: 15px;
+        
+     }
+  
+
+       
+       .txt_field3 >input{
+        width: 75%;
+        height: 35px;
+        font-size: 20px;
+        border: 1px solid black;
+        background: none;
+        outline: 2px;
+        font-family: "Courier New";
+        margin-bottom: 20px;
+        padding-left: 15px;
+       }
+  
+      .StudentformButtons {
+        left: 25%;
+      }
+  
+       @media only screen and (max-width: 1400px) {
+        .container {
+          background-size: 100% 100%;   
+        }
+      }
+  
+      @media only screen and (max-width: 1400px) and (min-width: 800px){
+        .form {
+          width: 55vw;   
+          height: 75vw;
+          margin-top: 50px;
+        }
+      }
+  
+      @media only screen and (max-width: 1400px) and (min-width: 800px){
+        .form {
+          width: 55vw;   
+          height: 75vw;
+          margin-top: 50px;
+        }
+      }

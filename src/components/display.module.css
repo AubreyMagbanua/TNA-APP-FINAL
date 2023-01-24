@@ -1,0 +1,22 @@
+
+.dash {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.info {
+    /* justify-content: center;
+    align-items: center;
+    display: flex; */
+    margin-left: 14%;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+/* .box {
+    border: 1px solid ;
+} */
+

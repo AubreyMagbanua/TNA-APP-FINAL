@@ -1,0 +1,49 @@
+.primary {
+    width: 10vw;
+    padding: 8px 10px 10px 8px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    color: white;
+    border-radius: 1.5mm;
+    border: 1px solid rgb(48, 48, 48);
+    background-color: rgb(180, 15, 15);
+    cursor: pointer;
+    letter-spacing: 2px;
+   }
+   .primary:hover {
+      background-color: #8f0c0c;
+    }
+
+    .secondary {
+      width: 10vw;
+      padding: 8px 10px 10px 8px;
+      margin-top: 20px;
+      margin-bottom: 18px;
+      font-size: 20px;
+      color: white;
+      border-radius: 1.5mm;
+      background-color: rgb(104, 98, 98);
+      cursor: pointer;
+      letter-spacing: 2px;
+      border: 1px solid rgb(48, 48, 48);
+    }
+
+    .secondary:hover {
+      background-color: #8f0c0c;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      .primary {
+      font-size: 1.7vw;
+      width: 9vw;
+      }
+    }
+
+    @media only screen and (max-width: 1400px) {
+      .secondary {
+      font-size: 1.7vw;
+      width: 9vw;
+      }
+    }
+

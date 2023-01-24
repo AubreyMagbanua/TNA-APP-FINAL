@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262a2e;
+    height: 5vh;
+    /* padding-left: 30px; */
+    /* margin: 100px; */
+}
+
+.container > p {
+    color: #fff;
+    font-size: 13px;
+}

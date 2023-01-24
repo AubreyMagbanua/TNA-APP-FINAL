@@ -1,0 +1,128 @@
+.container {
+    background-color: #891126;
+    margin-top: -25px;
+}
+
+.container > h2 {
+    margin-left: 15%;
+    margin-bottom: 2px;
+    margin-top: -60px;
+    text-align: left;
+    font-size: 27px;
+    color: #fff;
+}
+
+.hr {
+    width: 80%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.image > img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    transform: translate(-10%,-50%);
+    width: 230px;
+    /* height: 200px; */
+    background: rgba(148, 93, 93, 0);
+    height: 100%;
+}
+
+.card .image {
+    /* width: 100%;
+    height: 100%; */
+    overflow: hidden;
+}
+
+.card .image img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.card:hover .image img {
+    opacity: .5;
+    /* transform: translateX(30%); */
+}
+
+.card .details {
+    border-radius: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #a8a8a66b;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+
+.card .details .center {
+    padding: 5px 20px 0px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    line-height: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.card .details .center h1 span {
+    font-size: 10px;
+    color: #262626;
+}
+
+.card .details .center p {
+    font-size: 12px;
+    /* margin: 10px 0; */
+    padding: 0;
+    color: #262626;
+    /* justify-content: left; */
+    /* margin-left: 30px; */
+}
+
+.deets {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .box {
+        margin-top: 80px;
+        padding-bottom: 45px;
+    }
+
+    .card {
+        margin-left: 25px;
+    }
+  }
