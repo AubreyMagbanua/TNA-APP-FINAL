@@ -14,14 +14,14 @@ export default function StudentForm() {
   
   const register = () =>{
   
-      Axios.post('http://192.168.1.8:3000/register',{
+      Axios.post('http://172.16.22.225:3000/register',{
           username: registerUser, 
           email: registerEmail, 
           password: registerPass,
           cpass: registerConfirmpass
       }).then((response)=>{
           console.log(response)
-          if (response.data.message == "Successfully Registered"){
+          if (response.data.message === "Successfully Registered"){
           window.location.href='./Login'
           }else{
           setRegstaterr(response.data.message)
@@ -54,7 +54,7 @@ export default function StudentForm() {
             <input type="password" onChange={(e)=>{setConfirmpass(e.target.value);}} id="regpass1" required></input>
         </div>
         <div className={styles.StudentformButtons}>
-            <button type="submit" onClick={register}>Submit</button>
+            <button type="submit" onClick={register} className={styles.submitButton}>Submit</button><br/>
             <a href="/Login" variant="secondary">Already have an account?</a>
       </div>
       {flag &&(<Alert color="primary" variant="danger">{registerStatuseErr}</Alert>)}

@@ -8,7 +8,7 @@ const Header = () => {
         <a className={styles.text}>Bachelor of Engineering - Major in Computer Engineering Technology "Motion Detector"</a>
       </div>
       <div>
-        <a href="/Homepage"><button className={styles.primary}>Logout &nbsp;<LogoutIcon sx={{ fontSize: 20 }} /></button></a>
+        <a href="/Homepage"><button className={styles.primary}>Logout &nbsp;<LogoutIcon sx={{ fontSize: 15 }} /></button></a>
       </div>
     </div>
   );

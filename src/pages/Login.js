@@ -13,17 +13,17 @@ export default function StudentForm() {
   
   const login = () =>{
   
-      Axios.post('http://192.168.1.8:3000/signin',{
-          username: logUser, 
-          password: logPass,
-        }).then((response) => {
-            if (response.data.message === 'Verified'){
-              window.location.href='/Motion_detect'
-            }else{
-                setlogstaterr(response.data.message)
-                setFlag(true);
-            }
-          });
+    Axios.post('http://172.16.22.225:3000/signin',{
+      username: logUser, 
+      password: logPass,
+    }).then((response) => {
+        if (response.data.message === 'Verified'){
+          window.location.href='/Motion_detect'
+        }else{
+            setlogstaterr(response.data.message)
+            setFlag(true);
+        }
+      });
     
     
         };
@@ -45,17 +45,19 @@ export default function StudentForm() {
             <input type="password" onChange={(e)=>{setPass(e.target.value);}} id="logpass" required></input>
         </div>
         <div className={styles.StudentformButtons}>
-            <button type="submit" onClick={login}>Submit</button>
+            <button type="submit" onClick={login} className={styles.submitButton}>Submit</button>
            
       </div>
-      <div>
-      <a href="/resetpass" variant="secondary">Forgot password?</a>
-      </div>
-      <div>
-      <a href="/Studentreg" variant="secondary">Don't have an Account?</a>
-      </div>
+        <div className={styles.box} >
+          <div>
+          <a href="/resetpass" variant="secondary">Forgot password?</a>
+          </div>
+          <div>
+          <a href="/Studentreg" variant="secondary">Don't have an Account?</a>
+          </div>
+        </div>
       {flag &&(<Alert color="primary" variant="danger">{logStatuseErr}</Alert>)}
-        </div>   
+      </div>   
     </div>
       
 

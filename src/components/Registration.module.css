@@ -1,6 +1,6 @@
 .container{
     display: grid;
-    height: 100vh;
+    height: 112vh;
     grid-template-columns: 1fr ;
     grid-template-rows: 1fr;
     grid-template-areas: 
@@ -38,6 +38,7 @@
       margin-top: 2%;
       font-weight: 800;
       margin-bottom: 5%;
+      letter-spacing: 3px;
     }
   
 
@@ -66,7 +67,7 @@
       }
   
      .txt_field >input{
-      width: 75%;
+      width: 80%;
       height: 35px;
       font-size: 20px;
       border: 1px solid black;
@@ -77,21 +78,10 @@
       margin-left: 10%;
      }
   
-     .txt_field2 >input{
-        width: 75%;
-        height: 35px;
-        font-size: 20px;
-        border: 1px solid black;
-        background: none;
-        outline: 2px;
-        font-family: "Courier New";
-        margin-bottom: 20px;
-        margin-left:10%;
-       }
-  
+
        
        .txt_field3 >input{
-        width: 75%;
+        width: 80%;
         height: 35px;
         font-size: 20px;
         border: 1px solid black;
@@ -106,6 +96,35 @@
           text-align: center;
           gap: 30px;
        }
+
+       .submitButton {
+        height: 35px;
+        border-radius: 4px;
+        background-color: rgb(101, 98, 98);
+        border: 2px;
+        border-style: solid;
+        border-color: rgb(101, 98, 98);
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        width: 90px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 10px;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        margin-left: 6px;
+      }
+  
+      .submitButton:hover{
+        background-color: black;
+      }
+      
+      .submitButton:active{
+        background-color: rgb(211, 210, 210);
+      }
+  
   
   
        @media only screen and (max-width: 1400px) {

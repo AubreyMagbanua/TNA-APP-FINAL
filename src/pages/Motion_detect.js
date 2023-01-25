@@ -7,6 +7,15 @@ function RenderImage({ data }) {
         
         <div>
             <Header/>
+            <div>
+                <div>
+                    <div>  
+                        <h1 className={styles.text}>Caught On Camera </h1>
+                    </div>                   
+                </div>
+               
+                
+            </div>
             
             {data.images.map(function(images){                
                 let imagess = images['capture']['data'];
@@ -17,20 +26,18 @@ function RenderImage({ data }) {
                 let date_time = images['date_time'];
                 // Render into HTML
                 return (
-
-                    
-                    <div className={styles.dash}>
-                        <div className={styles.box}>
+                    <div>
+                            
+                        <div className={styles.container}>
                             <div>
-                                <p className={styles.info}> Motion Detected at: {date_time}</p>
-
-                                <img src={image} alt=""  width="800" height="500" />
+                                <p> Motion Detected at: {date_time}</p>
+                            </div>
+                            <div>
+                                <img src={image} alt=""  width="700" height="500" object-fit="cover" />
                             </div>
                             
                         
                         </div>
-
-                        
                     
                     </div>
                         )
@@ -41,7 +48,7 @@ function RenderImage({ data }) {
 
 export async function getServerSideProps() {
     // Fetch data from the server
-    const response = await fetch('http://192.168.1.8/:3000/image');
+    const response = await fetch('http://172.16.22.225:3000/image');
 
     // Get the json response
     const data = await response.json();

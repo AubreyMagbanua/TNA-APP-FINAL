@@ -14,10 +14,10 @@ export default function StudentForm() {
   
   const reset = () =>{
   
-      Axios.post('http://192.168.1.8:3000/resetpass',{
+      Axios.post('http://172.16.22.225:3000/resetpass',{
         email: Email, 
         newpass: NewPass,
-        newpass1: ConfirmPass
+        newpass1: ConfirmPass,
         }).then((response) => {
             if (response.data.message === 'Successfully Reset Password'){
               window.location.href='/Login'
@@ -39,7 +39,7 @@ export default function StudentForm() {
             <input type="text" onChange={(e)=>{setEmail(e.target.value);}} id="resetemail" required></input>
         </div>
         <div className={styles.txt_field3} >
-          <label>New Password: </label>
+          <label>Password: </label>
             <input type="password" onChange={(e)=>{setNewPass(e.target.value);}} id="resetpass" required></input>
         </div>
         <div className={styles.txt_field3} >
@@ -47,7 +47,7 @@ export default function StudentForm() {
             <input type="password" onChange={(e)=>{setComfirmPass(e.target.value);}} id="resetpass1" required></input>
         </div>
         <div className={styles.StudentformButtons}>
-            <button type="submit" onClick={reset}>Submit</button>
+            <button type="submit" onClick={reset} className={styles.submitButton}>Submit</button><br/>
             <a href="/Studentreg" variant="secondary">Don't have an Account?</a>
       </div>
             {flag &&(<Alert color="primary" variant="danger">{resetStatuseErr}</Alert>)}

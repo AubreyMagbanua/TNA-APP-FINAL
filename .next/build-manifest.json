@@ -15,6 +15,11 @@
   ],
   "rootMainFiles": [],
   "pages": {
+    "/Homepage": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Homepage.js"
+    ],
     "/Login": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -25,11 +30,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/Motion_detect.js"
     ],
-    "/Studentreg": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Studentreg.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -39,11 +39,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/resetpass": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/resetpass.js"
     ]
   },
   "ampFirstPages": []

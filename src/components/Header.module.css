@@ -12,17 +12,19 @@
     align-items: center;
     width: 100px;
     height: 40px;
-    background-color: rgb(4, 69, 4);
-    color: rgb(20, 20, 20);
-    font-family: sans-serif;
+    background-color: transparent;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
-    border: 1px solid #343A40;
+    border: 1px solid transparent;
     cursor: pointer;
     border-radius: 10px;
+    text-decoration: none;
+    border-bottom: darkgreen;
 }
   
 .primary:hover {
-    color: #d3d3d3;
+    color: #000000;
 }
 
 img.container {
@@ -30,7 +32,7 @@ img.container {
 }
 
 a.text{
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
     gap: 20px;

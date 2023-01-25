@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Motion_detect": "pages/Motion_detect.js",
   "/Login": "pages/Login.js",
-  "/Studentreg": "pages/Studentreg.js"
+  "/Motion_detect": "pages/Motion_detect.js",
+  "/Homepage": "pages/Homepage.js"
 }

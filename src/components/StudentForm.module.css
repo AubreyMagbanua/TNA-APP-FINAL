@@ -37,6 +37,7 @@
     color: rgb(0, 0, 0);
     margin-top: 2%;
     font-weight: 800;
+    letter-spacing: 3px;
   }
 
   .image1 {
@@ -115,9 +116,40 @@
      .StudentformButtons {
         text-align: center;
         gap: 30px;
-        
-       
      }
+
+    .submitButton {
+      height: 35px;
+      border-radius: 4px;
+      background-color: rgb(101, 98, 98);
+      border: 2px;
+      border-style: solid;
+      border-color: rgb(101, 98, 98);
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      width: 90px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 10px;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+      margin-left: 6px;
+    }
+
+    .submitButton:hover{
+      background-color: black;
+    }
+    
+    .submitButton:active{
+      background-color: rgb(211, 210, 210);
+    }
+
+    .box {
+      text-align: left;
+      margin-left: 5.5%;
+    }
 
 
      @media only screen and (max-width: 1400px) {
